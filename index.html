@@ -14,9 +14,6 @@
       html {
         font-size: 1vw;
       }
-      *{
-        overflow: hidden;
-      }
       body {
         background-color: #00021a; /* Very dark bluish background */
         font-family: "Raleway", sans-serif;
@@ -27,6 +24,7 @@
         height: 100vh;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
       }
 
       body::before,
@@ -50,9 +48,9 @@
         right: -2.5rem;
       }
       h1 {
-        color: #ddd;
+        color: #d9d9d9;
         font-size: 2rem;
-        font-weight: 300; /* Thin text */
+        font-weight: 600; /* Thin text */
         text-transform: uppercase; /* Uppercase text */
         letter-spacing: 0.25rem;
         text-align: center;
@@ -64,7 +62,6 @@
 
       h2 {
         font-size: 1.25rem;
-        font-weight: 400; /* Thin text */
         color: #a3bdc9; /* Gray metal */
         text-transform: uppercase; /* Uppercase text */
         letter-spacing: 0.75rem;
