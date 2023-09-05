@@ -53,6 +53,7 @@
         font-weight: 300; /* Thin text */
         text-transform: uppercase; /* Uppercase text */
         letter-spacing: 0.25rem;
+        text-align: center;
       }
 
       h1 span {
@@ -65,6 +66,7 @@
         color: #808080; /* Gray metal */
         text-transform: uppercase; /* Uppercase text */
         letter-spacing: 0.75rem;
+        text-align: center;
       }
       @keyframes zoom {
         0% {
@@ -76,6 +78,16 @@
           opacity: 0.2;
           width: 25rem;
           height: 25rem;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 2vw;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        html {
+          font-size: 3vw;
         }
       }
     </style>
