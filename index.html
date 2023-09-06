@@ -15,8 +15,12 @@
         font-size: 1vw;
       }
       * {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+
       body {
         background-color: #00021a; /* Very dark bluish background */
         font-family: "Raleway", sans-serif;
@@ -27,6 +31,8 @@
         height: 100vh;
         flex-direction: column;
         position: relative;
+        gap: 1rem;
+        overflow: hidden;
       }
 
       body::before,
@@ -58,8 +64,9 @@
         text-align: center;
       }
 
-      h1 span {
+      h1 > span {
         color: #00aeff; /* Accentuated blue for "Kratrim" */
+        display: inline-flex;
       }
 
       h2 {
@@ -71,6 +78,11 @@
         position: relative;
       }
 
+      .letter:hover {
+        transform: translateY(-0.5rem);
+        cursor: pointer;
+        transition: transform 0.15s ease-in;
+      }
       @keyframes zoom {
         0% {
           width: 20rem;
@@ -96,7 +108,15 @@
     </style>
   </head>
   <body>
-    <h1>Hello, We are <span>Kratrim</span></h1>
+    <h1>
+      Hello, We are
+      <span>
+        <span class="letter">K</span><span class="letter">R</span
+        ><span class="letter">A</span><span class="letter">T</span
+        ><span class="letter">R</span><span class="letter">I</span
+        ><span class="letter">M</span>
+      </span>
+    </h1>
     <h2>Stay tuned for more</h2>
   </body>
 </html>
