@@ -78,10 +78,14 @@
         position: relative;
       }
 
+      .letter {
+        transition: transform 0.15s cubic-bezier(0.56, 0.35, 0.48, 0.715);
+      }
+
       .letter:hover {
-        transform: translateY(-0.5rem);
+        transform: scale(1.25);
         cursor: pointer;
-        transition: transform 0.15s ease-in;
+        /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
       }
       @keyframes zoom {
         0% {
